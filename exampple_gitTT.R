@@ -56,6 +56,7 @@ credit_boost10 <- C5.0(credit_train[-17], credit_train$default,
                        trials = 10)
 credit_boost10
 summary(credit_boost10)
+summary(credit_boost10)#end of code
 
 # Let's see if there's also an improvement on the test data
 credit_boost_pred10 <- predict(credit_boost10, credit_test)
